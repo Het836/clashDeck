@@ -1,0 +1,14 @@
+{
+  "name": "clashdeck",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/game-server",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:server": "npm run dev --workspace=apps/game-server",
+    "build:web": "npm run build --workspace=apps/web"
+  }
+}
